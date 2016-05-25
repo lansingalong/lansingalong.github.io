@@ -1,0 +1,13 @@
+body {
+	font-family: "Arvo";
+}
+
+#top-bar p {
+	font-family: "Futura";
+}
+
+#top-bar h1 {
+	font-size: 48px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
