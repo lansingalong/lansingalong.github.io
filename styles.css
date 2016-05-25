@@ -2,12 +2,34 @@ body {
 	font-family: "Arvo";
 }
 
-#top-bar p {
-	font-family: "Futura";
+#my-intro {
+	max-width: 700px;
 }
 
-#top-bar h1 {
+#my-intro p {
+	font-family: "Futura";
+	line-height: 150%;
+}
+
+#my-intro h1 {
 	font-size: 48px;
 	font-weight: bold;
 	letter-spacing: 1px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#top-bar {
+	padding: 18px 0 0 18px;
+}
+
+#social-media {
+	float: right;
+    display: inline-block;
+    margin-top: 63px;
+    letter-spacing: 20px;
+    font-size: 25px;
+    margin-right: 30px;
+    border-top: 4px solid black;
+    padding-top: 10px;
 }
