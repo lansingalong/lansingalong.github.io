@@ -2,13 +2,24 @@ body {
 	font-family: "Arvo";
 }
 
+#top-bar {
+	padding: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
 #my-intro {
 	max-width: 700px;
+	float: left;
 }
 
 #my-intro p {
 	font-family: "Futura";
 	line-height: 150%;
+	font-size: 15px;
 }
 
 #my-intro h1 {
@@ -19,8 +30,16 @@ body {
 	margin-top: 0;
 }
 
-#top-bar {
-	padding: 18px 0 0 18px;
+#my-intro a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+#my-intro i {
+	font-size: 25px;
+	display: inline-block;
+	margin-left: 5px;
 }
 
 #social-media {
@@ -39,33 +58,46 @@ body {
 	color: black;
 }
 
-#my-intro a {
-	text-decoration: none;
-	color: black;
-	font-size: 18px;
-}
-
-#my-intro i {
-	font-size: 25px;
-	display: inline-block;
-	margin-left: 5px;
-}
-
 #scroll-bar {
 	width: 100vw;
 	height: 100vh;
 	overflow-x: scroll;
 	overflow-y: hidden;
-	position:absolute;
+	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
+	z-index: 0;
 }
 
 .portfolio-year {
-	width: 100vw;
+	width: calc(100vw - 300px);
 	height: 100vh;
-	background-color: red;
 	display: inline-block;
+	background-color: #c0c0c0;
+	position: absolute;
+
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.portfolio-year.wonder {
+	background-color: #E3CBC3;
+}
+
+.portfolio-year.doodle {
+	background-color: #161F2E;
+}
+
+.portfolio-year.explorative {
+	background-color: #FFD24D;
+}
+
+.portfolio-year.design {
+	background-color: #517AC0;
+}
+
+#call-to-action-play-button {
+	font-size: 10px;
 }
