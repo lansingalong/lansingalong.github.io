@@ -72,14 +72,14 @@ body {
 }
 
 .portfolio-year {
-	width: calc(100vw - 300px);
+	width: calc(100vw - 50px);
 	height: 100vh;
 	display: inline-block;
 	background-color: #c0c0c0;
 	position: absolute;
 
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .portfolio-year.wonder {
@@ -87,7 +87,8 @@ body {
 }
 
 .portfolio-year.doodle {
-	background-color: #161F2E;
+	/*background-color: #161F2E;*/
+	background-color: #8C6872;
 }
 
 .portfolio-year.explorative {
@@ -100,4 +101,10 @@ body {
 
 #call-to-action-play-button {
 	font-size: 10px;
+}
+
+.project-card {
+	display: inline-block;
+	float: left;
+	margin: 10px;
 }
