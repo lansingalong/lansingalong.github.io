@@ -38,3 +38,34 @@ body {
 	text-decoration: none;
 	color: black;
 }
+
+#my-intro a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+#my-intro i {
+	font-size: 25px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+#scroll-bar {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	position:absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.portfolio-year {
+	width: 100vw;
+	height: 100vh;
+	background-color: red;
+	display: inline-block;
+}
