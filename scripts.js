@@ -9,4 +9,19 @@ var left = 0;
 
 	year.style.left = left;
 	left += year.offsetWidth;
-})
+});
+
+$(function() {
+
+	$("#scroll-bar").scrollLeft(10000);
+
+   $("body").mousewheel(function(event, delta) {
+
+      var original = $("#scroll-bar").scrollLeft()
+      $("#scroll-bar").scrollLeft(original - delta * 2);
+    
+      event.preventDefault();
+
+   });
+
+});
