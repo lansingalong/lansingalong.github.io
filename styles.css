@@ -1,5 +1,14 @@
-body {
-	font-family: "Arvo";
+@font-face {
+  font-family: "Akkurat";
+  src: url("fonts/AkkuratLight.eot");
+  src: url("fonts/AkkuratLight.woff") format("woff"),
+       url("fonts/Akkurat Light Regular.otf") format("opentype"),
+       url("fonts/AkurratLight.svg") format("svg");
+  }
+
+  body {
+	font-family: "Akkurat";
+	font-weight: "light";
 }
 
 #top-bar {
@@ -12,12 +21,12 @@ body {
 }
 
 #my-intro {
-	max-width: 700px;
+	max-width: 500px;
 	float: left;
 }
 
 #my-intro p {
-	font-family: "Futura";
+	font-family: "Akkurat";
 	line-height: 150%;
 	font-size: 15px;
 }
@@ -79,20 +88,20 @@ body {
 	position: absolute;
 
 	padding-left: 25px;
-	padding-right: 25px;
+	/*padding-right: 25px;*/
 }
 
 .portfolio-year.wonder {
-	background-color: #E3CBC3;
+	background-color: #F6DC85;
 }
 
 .portfolio-year.doodle {
 	/*background-color: #161F2E;*/
-	background-color: #8C6872;
+	background-color: #739D82;
 }
 
 .portfolio-year.explorative {
-	background-color: #FFD24D;
+	background-color: #DADF86;
 }
 
 .portfolio-year.design {
@@ -107,4 +116,5 @@ body {
 	display: inline-block;
 	float: left;
 	margin: 10px;
+	text-align: center;
 }
