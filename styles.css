@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Akkurat";
-  src: url("fonts/AkkuratLight.eot");
-  src: url("fonts/AkkuratLight.woff") format("woff"),
-       url("fonts/Akkurat Light Regular.otf") format("opentype"),
-       url("fonts/AkurratLight.svg") format("svg");
+	src: url("fonts/AkkuratLight.eot");
+	src: url("fonts/AkkuratLight.woff") format("woff"),
+    	 url("fonts/Akkurat Light Regular.otf") format("opentype"),
+         url("fonts/AkurratLight.svg") format("svg");
   }
 
-  body {
+body {
 	font-family: "Akkurat";
 	font-weight: "light";
 }
 
 #top-bar {
-	padding: 40px;
+	padding: 30px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -21,14 +21,16 @@
 }
 
 #my-intro {
-	max-width: 500px;
+	max-width: 650px;
 	float: left;
+	letter-spacing: .2px;
 }
 
 #my-intro p {
 	font-family: "Akkurat";
 	line-height: 150%;
 	font-size: 15px;
+	font-weight: bold;
 }
 
 #my-intro h1 {
@@ -58,13 +60,13 @@
     letter-spacing: 20px;
     font-size: 25px;
     margin-right: 30px;
-    border-top: 4px solid black;
+    border-top: 3px solid #254771;
     padding-top: 10px;
 }
 
 #social-media a {
 	text-decoration: none;
-	color: black;
+	color: #254771;
 }
 
 #scroll-bar {
@@ -92,20 +94,20 @@
 }
 
 .portfolio-year.wonder {
-	background-color: #F6DC85;
+	background-color: #FFFFF4;
 }
 
 .portfolio-year.doodle {
 	/*background-color: #161F2E;*/
-	background-color: #739D82;
+	background-color: #F8F8F9;
 }
 
 .portfolio-year.explorative {
-	background-color: #DADF86;
+	background-color: #F0F8FF;
 }
 
 .portfolio-year.design {
-	background-color: #517AC0;
+	background-color: white;
 }
 
 #call-to-action-play-button {
@@ -117,4 +119,34 @@
 	float: left;
 	margin: 10px;
 	text-align: center;
+	transition: .1s linear;
+}
+
+.project-image {
+	width:300px;
+	height:300px;
+	padding: 15px 0 15px 0;
+}
+
+.project-card:hover {
+	transform: scale(1.1,1.1);
+}
+
+.project-card-top {
+	font-size: 20px;
+	letter-spacing: .2px;
+	color: #254771;
+}
+
+.project-card-bottom {
+	font-size: 16px;
+	letter-spacing: .5px;
+	color: #254771;
+}
+
+.project-card-title {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: .2px;
+	color: #254771;
 }
