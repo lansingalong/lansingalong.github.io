@@ -44,7 +44,7 @@ $(function() {
 			var timelineYears = document.querySelectorAll(".timeline-year");
 
 			[].forEach.call(timelineYears, function(tY){
-				tY.style.width = (windowWidth - 50) / (timelineYears.length) + "px";
+				tY.style.width = (windowWidth - 100) / (timelineYears.length) + "px";
 			});
 		}
 

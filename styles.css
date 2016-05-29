@@ -159,6 +159,7 @@ body {
 	min-height: 60px;
 	z-index: 2;
 	padding: 25px;
+	text-align: center;
 
 }
 #timeline-nav a {
@@ -196,3 +197,6 @@ body {
 	display: inherit;
 }
 
+.hidden {
+	display: none;
+}
