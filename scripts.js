@@ -1,9 +1,10 @@
 $(function() {
 
 	$("#top-bar").ready(function() {
-		var adjustForTopBar = function () {
-			var topBarHeight = document.querySelector("#top-bar").offsetHeight;
 
+		// widen portfolio year to accomodate the number of projects in that year
+		var adjustForExtraProjects = function () {
+			var topBarHeight = document.querySelector("#top-bar").offsetHeight;
 			portfolioYear = document.querySelectorAll(".portfolio-year");
 
 			var left = 0;
@@ -14,7 +15,6 @@ $(function() {
 				var projectsInYear = year.querySelectorAll(".project-card");
 				var portfolioWidth = year.offsetWidth - 100;
 				var projectWidth = projectsInYear[0].offsetWidth + 20;
-				var projectWidth = 324;
 				var numberOfProjects = projectsInYear.length;
 				var numberOfProjectsThatFit = portfolioWidth / projectWidth;
 
@@ -26,7 +26,6 @@ $(function() {
 					var projectsInYear = year.querySelectorAll(".project-card");
 					var portfolioWidth = year.offsetWidth - 50;
 					var projectWidth = projectsInYear[0].offsetWidth + 20;
-					var projectWidth = 324;
 					var numberOfProjects = projectsInYear.length;
 					var numberOfProjectsThatFit = portfolioWidth / projectWidth;
 				}
@@ -36,43 +35,64 @@ $(function() {
 			});
 		}
 
-		adjustForTopBar();
-		$(window).resize(adjustForTopBar);
+		adjustForExtraProjects();
+		$(window).resize(adjustForExtraProjects);
 
+		// make the timeline-nav equally distributed in width
 		var adjustForNavBar = function(){
 			var windowWidth = document.querySelector("html").offsetWidth;
 			var timelineYears = document.querySelectorAll(".timeline-year");
+			var timeline = document.querySelector("#timeline-nav");
 
 			[].forEach.call(timelineYears, function(tY){
-				tY.style.width = (windowWidth - 100) / (timelineYears.length) + "px";
+				tY.style.width = (windowWidth - parseInt($("#timeline-nav").css('padding-left')) * 2) / (timelineYears.length) + "px";
 			});
 		}
+		adjustForNavBar();
+		$(window).resize(adjustForNavBar);
 
+		// if coming in with a hash, then move to that
 		var hash = window.location.hash.substring(1);
 		if (hash && $(".portfolio-year." + hash).length > 0) {
 			$(".timeline-year").removeClass("active")
 			$(".timeline-year." + hash).toggleClass("active");
 		}
 
+		// move to correct portfolio year when that time period is clicked in timeline
 		$(".timeline-year").click(function () {
 			$(".timeline-year").removeClass("active")
-			$(this).toggleClass("active");
+
+			event.preventDefault();
+
+
+			var active_period = $("a > div.active").parent().attr("href");
+			var period = $(this).parent().attr("href");
+
+			$("#scroll-bar").animate({
+			  scrollLeft: $("#scroll-bar").scrollLeft() + $(period).position().left
+			}, 500, "swing", function () {
+				$(this).toggleClass("active");
+			})
+
 		})
 
+		// focused portfolio year is marked as active in the timeline
 		$("#scroll-bar").scroll(function(event){
 		   	var focus = $('.portfolio-year:in-viewport');
 
-		    // window.location.hash = "#" + $(focus).attr("id");
+		    var period = $(focus).attr("id");
+		    if(history.replaceState) {
+		    	history.replaceState(undefined, undefined, "#" + period)
+		    }
 			$(".timeline-year").removeClass("active")
 			$(".timeline-year." + $(focus).attr("id")).toggleClass("active");
 		});
 
-		adjustForNavBar();
-		$(window).resize(adjustForNavBar);
 
 		$("#scroll-bar").scrollLeft(10000);
 	})
 
+	// map vertical scrolling to horizontal scrolling
 	$("body").mousewheel(function(event, delta) {
 		var original = $("#scroll-bar").scrollLeft()
 		$("#scroll-bar").scrollLeft(original + delta);
