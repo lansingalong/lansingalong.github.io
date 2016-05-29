@@ -1,0 +1,14 @@
+{
+  "name": "jquery.viewport",
+  "_cacheHeaders": {
+    "ETag": "\"3abb8934025af8a99c8d376137c8bbf01a34ba96\"",
+    "Content-Length": "756",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "_release": "e-tag:3abb89340",
+  "main": "index.js",
+  "_source": "https://raw.githubusercontent.com/tuupola/jquery_viewport/master/jquery.viewport.js",
+  "_target": "*",
+  "_originalSource": "https://raw.githubusercontent.com/tuupola/jquery_viewport/master/jquery.viewport.js",
+  "_direct": true
+}

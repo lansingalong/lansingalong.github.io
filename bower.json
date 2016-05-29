@@ -14,6 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery-mousewheel": "~3.1.13"
+    "jquery-mousewheel": "~3.1.13",
+    "jquery.viewport": "https://raw.githubusercontent.com/tuupola/jquery_viewport/master/jquery.viewport.js"
   }
 }

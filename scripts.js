@@ -18,9 +18,6 @@ $(function() {
 				var numberOfProjects = projectsInYear.length;
 				var numberOfProjectsThatFit = portfolioWidth / projectWidth;
 
-
-				console.log(projectsInYear, portfolioWidth, projectWidth, numberOfProjectsThatFit);
-				console.log(numberOfProjectsThatFit, numberOfProjects );
 				while (numberOfProjectsThatFit < numberOfProjects) {
 					year.style.width = year.offsetWidth + 1 + "px";
 					// year.style.width = year.offsetWidth + projectWidth + "px";
@@ -32,9 +29,6 @@ $(function() {
 					var projectWidth = 324;
 					var numberOfProjects = projectsInYear.length;
 					var numberOfProjectsThatFit = portfolioWidth / projectWidth;
-
-					console.log(projectsInYear, portfolioWidth, projectWidth, numberOfProjectsThatFit);
-					console.log(numberOfProjectsThatFit , numberOfProjects );
 				}
 
 				year.style.left = left;
@@ -44,6 +38,37 @@ $(function() {
 
 		adjustForTopBar();
 		$(window).resize(adjustForTopBar);
+
+		var adjustForNavBar = function(){
+			var windowWidth = document.querySelector("html").offsetWidth;
+			var timelineYears = document.querySelectorAll(".timeline-year");
+
+			[].forEach.call(timelineYears, function(tY){
+				tY.style.width = (windowWidth - 50) / (timelineYears.length) + "px";
+			});
+		}
+
+		var hash = window.location.hash.substring(1);
+		if (hash && $(".portfolio-year." + hash).length > 0) {
+			$(".timeline-year").removeClass("active")
+			$(".timeline-year." + hash).toggleClass("active");
+		}
+
+		$(".timeline-year").click(function () {
+			$(".timeline-year").removeClass("active")
+			$(this).toggleClass("active");
+		})
+
+		$("#scroll-bar").scroll(function(event){
+		   	var focus = $('.portfolio-year:in-viewport');
+
+		    // window.location.hash = "#" + $(focus).attr("id");
+			$(".timeline-year").removeClass("active")
+			$(".timeline-year." + $(focus).attr("id")).toggleClass("active");
+		});
+
+		adjustForNavBar();
+		$(window).resize(adjustForNavBar);
 
 		$("#scroll-bar").scrollLeft(10000);
 	})
