@@ -1,4 +1,5 @@
 $(function() {
+	$("html").fadeIn(500);
 
 	$("#top-bar").ready(function() {
 
@@ -88,6 +89,16 @@ $(function() {
 			$(".timeline-year." + $(focus).attr("id")).toggleClass("active");
 		});
 
+		var toggleBio = function () {
+			$("#my-intro p, #social-media").slideToggle(200);
+			$("#read-more, #read-less").toggle(1);
+			$("#scroll-bar").fadeToggle(100);
+			$("#timeline-nav").toggleClass("hidden");
+		}
+
+		$("#read-less").hide();
+		$("#read-more, #read-less").click(toggleBio)
+
 
 		$("#scroll-bar").scrollLeft(10000);
 	})
@@ -95,7 +106,7 @@ $(function() {
 	// map vertical scrolling to horizontal scrolling
 	$("body").mousewheel(function(event, delta) {
 		var original = $("#scroll-bar").scrollLeft()
-		$("#scroll-bar").scrollLeft(original + delta);
+		$("#scroll-bar").scrollLeft(original + delta * 3);
 
 		event.preventDefault();
 	});
