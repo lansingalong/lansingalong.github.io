@@ -23,12 +23,8 @@
 			<!-- IMAGES GO HERE -->
 		</section>
 		<div id="footer">
-			<section class="previous-project-footer">
-				<a href="#">&#10229; previous project</a>
-			</section>
-			<section class="next-project-footer">
-				<a href="#">next project &#10230;</a>
-			</section>
+			<a id="previous-project-footer" href="#">&#10229; previous project</a>
+			<a id="next-project-footer" href="#">next project &#10230;</a>
 		</div>
 <script type='text/javascript' src='bower_components/jquery/dist/jquery.min.js'></script>
 <script type="text/javascript">
@@ -54,23 +50,28 @@
 
 	var currentProjectId = parseInt(getUrlParameter("id"));
 	$.getJSON("gallery-content/" + currentProjectId + ".json", function(data) {
-		$("#project-title").val(data["title"]);
-		$("#project-info").val(data["description"]);
+		$("#project-title").html(data["title"]);
+		$("#project-info").html(data["description"]);
 		data["images"].forEach(function(image_url){
 			var img = $('<img class="gallery-image">');
 			img.attr('src', image_url);
 			img.appendTo('#gallery');
 		})
 	})
+
+	var total_number_of_projects = 16;
+
+	if (currentProjectId + 1 <= total_number_of_projects) {
+		$("#next-project-footer").attr("href", "gallery.html?id=" + (currentProjectId + 1));
+	} else {
+		$("#next-project-footer").hide();
+	}
+
+	if (currentProjectId - 1 > 0) {
+		$("#previous-project-footer").attr("href", "gallery.html?id=" + (currentProjectId - 1));
+	} else {
+		$("#previous-project-footer").hide();
+	}
 </script>
 
-
-
-
-
-
-
-
-
-		
 	</html>
