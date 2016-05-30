@@ -176,7 +176,9 @@ body {
 }
 
 .portfolio-year.wonder {
-	background-color: #FFFBF5;
+	background: url("bg.png");
+	background-size: cover;
+	/*background-color: #FFFBF5;*/
 }
 
 .portfolio-year.doodle {
@@ -260,6 +262,10 @@ body {
 
 .timeline-year:hover{
 	color: #c0c0c0;
+}
+
+.timeline-year hr {
+	border: 1px solid black;
 }
 
 .timeline-year:hover hr {

@@ -9,13 +9,8 @@
 	<body>
 		<section id="gallery-description">
 			<a href="index.html" style="text-decoration: none">&#10229;  all projects</a>
-			<h1 id="project-title">Soldier&#8217s Tale</h1>
-			<p id="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h1 id="project-title"></h1>
+			<p id="project-info"></p>
 			<span id="hide-project-info">hide project info -</span>
 			<span id="show-project-info">show project info +</span>
 		</section>
@@ -48,8 +43,14 @@
 	    }
 	};
 
+	function pad(n, width, z) {
+	  z = z || '0';
+	  n = n + '';
+	  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+	}
+
 	var currentProjectId = parseInt(getUrlParameter("id"));
-	$.getJSON("gallery-content/" + currentProjectId + ".json", function(data) {
+	$.getJSON("gallery-content/" + pad(currentProjectId, 2) + ".json", function(data) {
 		$("#project-title").html(data["title"]);
 		$("#project-info").html(data["description"]);
 		data["images"].forEach(function(image_url){
