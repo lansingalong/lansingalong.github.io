@@ -1,7 +1,9 @@
 {
-	"title": "",
-	"description": "",
+	"title": "Platelist",
+	"description": "Mobile app design including UI/UX flow of app, illustration and animation. ",
 	"images": [
-		""
+		"assets/gallery-images/platelist/platelist_splash.png",
+		"assets/gallery-images/platelist/platelist_swipe_no.gif",
+		"assets/gallery-images/platelist/platelist_swipe_pref.gif"
 	]
 }

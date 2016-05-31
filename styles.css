@@ -80,7 +80,7 @@ body {
   	}
 
   	.circle {
-  		margin-top: -7px;
+  		margin-top: -3px;
   	}
   }
 
@@ -253,9 +253,11 @@ body {
 }
 
 .timeline-year {
+	font-size: 14px;
 	display: inline-block;
 	margin-left: -5px;
 	text-align: center;
+	padding-top: 5px;
 	padding-bottom: 10px;
 	color: black;
 }
@@ -276,7 +278,7 @@ body {
 	display: none;
 	min-height: 15px;
 	min-width: 15px;
-	background-color: red;
+	background-color: #5677FC;
 	border: 3px solid white;
 	border-radius: 100%;
 	margin-bottom: -20px;
