@@ -1,7 +1,11 @@
 {
-	"title": "",
-	"description": "",
+	"title": "Red and Black",
+	"description": "Newspaper publication for an independent student organization",
 	"images": [
-		""
+		"assets/gallery-images/redblack/redandblack_01.png",
+		"assets/gallery-images/redblack/redandblack_02.png",
+		"assets/gallery-images/redblack/redandblack_03.png",
+		"assets/gallery-images/redblack/redandblack_04.png",
+		"assets/gallery-images/redblack/redandblack_05.png"
 	]
 }
