@@ -1,0 +1,10 @@
+{
+	"title": "Fine Arts",
+	"description": "Paintings and drawings",
+	"images": [
+		"assets/gallery-images/fine_arts/drawing_03.jpg",
+		"assets/gallery-images/fine_arts/drawing_02.jpg",
+		"assets/gallery-images/fine_arts/drawing_01.jpg",
+		"assets/gallery-images/fine_arts/sketchbook.jpg"
+	]
+}

@@ -1,11 +1,10 @@
 {
-	"title": "Illustrations",
-	"description": "",
+	"title": "Prints",
+	"description": "Stationary, poster and pattern set prints for fun.",
 	"images": [
-		"assets/gallery-images/illustrations/illustrative_work_doodle.png",
-		"assets/gallery-images/illustrations/love.jpg",
-		"assets/gallery-images/illustrations/plant.jpg",
-		"assets/gallery-images/illustrations/vignette.jpg",
-		"assets/gallery-images/illustrations/storybooks.gif"
+		"assets/gallery-images/prints/succulent.png",
+		"assets/gallery-images/prints/bike_poster.jpg",
+		"assets/gallery-images/prints/patternset.png",
+		"assets/gallery-images/prints/screenprint.png"
 	]
 }

@@ -107,8 +107,12 @@ body {
    and (max-width: 768px) {
    	#gallery {
    		text-align: center;
-   		padding: 20px !important;
+   		padding: 10px !important;
    		margin: auto;
+   	}
+
+   	.gallery-image {
+   		margin-top: 10px !important;
    	}
 
    	.previous-project-navigation, .next-project-navigation {

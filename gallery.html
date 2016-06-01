@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<section id="gallery-description">
-			<a href="index.html" style="text-decoration: none">all projects</a>
+			<a href="index.html" style="text-decoration: none"><i class="fa fa-angle-left" aria-hidden="true"></i> all projects</a>
 			<h1 id="project-title"></h1>
 			<p id="project-info"></p>
 			<span id="hide-project-info">hide project info &ndash;</span>
@@ -67,8 +67,8 @@
 			var img = $('<img class="gallery-image">');
 			img.attr('src', image_url);
 			img.appendTo('#gallery');
-		})
-	})
+		});
+	});
 
 	var total_number_of_projects = 16;
 
@@ -78,7 +78,7 @@
 		$(".next-project-navigation").hide();
 	}
 
-	if (currentProjectId - 1 > 0) {
+	if (currentProjectId - 1 >= 0) {
 		$(".previous-project-navigation").attr("href", "gallery.html?id=" + (currentProjectId - 1));
 	} else {
 		$(".previous-project-navigation").hide();
