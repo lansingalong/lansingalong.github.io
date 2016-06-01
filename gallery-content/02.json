@@ -1,7 +1,11 @@
 {
-	"title": "",
+	"title": "Illustrations",
 	"description": "",
 	"images": [
-		""
+		"assets/gallery-images/illustrations/illustrative_work_doodle.png",
+		"assets/gallery-images/illustrations/love.jpg",
+		"assets/gallery-images/illustrations/plant.jpg",
+		"assets/gallery-images/illustrations/vignette.jpg",
+		"assets/gallery-images/illustrations/storybooks.gif"
 	]
 }
