@@ -1,7 +1,13 @@
 {
-	"title": "",
-	"description": "",
+	"title": "The Page",
+	"description": "Georges Pèrec authors The Page, in which he contemplates the many ways in which we occupy space around us, and describes everyday places, things and items that we are familiar with in a psychoanalysis. His words are conveyed in his essay in a virtuoso, stream-of-conscious fashion.<br><br>Process</br> This book is designed using his essay and only typographic elements, using letters as forms and experimenting with type, hierarchy, composition, and punctuation in sensible and nonsensical ways.",
 	"images": [
-		""
+		"assets/gallery-images/the_page/thepage_01.jpg",
+		"assets/gallery-images/the_page/thepage_3-5.jpg",
+		"assets/gallery-images/the_page/thepage_6-7.jpg",
+		"assets/gallery-images/the_page/thepage_8-9.jpg",
+		"assets/gallery-images/the_page/thepage_12.13.jpg",
+		"assets/gallery-images/the_page/thepage_10-11.jpg",
+		"assets/gallery-images/the_page/thepage_last.jpg"
 	]
 }

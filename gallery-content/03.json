@@ -1,7 +1,22 @@
 {
-	"title": "",
-	"description": "",
+	"title": "Glow",
+	"description": "Glow is the first smart headphones that uses laser light. Using lasers, premium audio drivers, and smartphone integration, Glow is the ultimate pairing of expression, sound and utility. Designed <a href=\"http://www.glowheadphones.com/\" target=\"_blank\">website</a>. Created logo, illustrations, icons and layout for <a href=\"https://www.kickstarter.com/projects/glowheadphones/glow-the-first-smart-headphones-with-laser-light/description\" target=\"_blank\">Kickstarter Campaign</a>, created Quick Start Guide and User Manual.",
 	"images": [
-		""
+		"assets/gallery-images/glow/glow_website_01.jpg",
+		"assets/gallery-images/glow/glow_website_02.jpg",
+		"assets/gallery-images/glow/glow_website_03.jpg",
+		"assets/gallery-images/glow/glow_website_04.jpg",
+		"assets/gallery-images/glow/glow_smile.jpg",
+		"assets/gallery-images/glow/glow_student.jpg",
+		"assets/gallery-images/glow/glow_red.jpg",
+		"assets/gallery-images/glow/glow_skate.jpg",
+		"assets/gallery-images/glow/glow_package.jpg",
+		"assets/gallery-images/glow/glow_guide_front.jpg",
+		"assets/gallery-images/glow/glow_guide_01.jpg",
+		"assets/gallery-images/glow/glow_guide_02.jpg",
+		"assets/gallery-images/glow/glow_guide_03.jpg",
+		"assets/gallery-images/glow/glow_guide_04.jpg",
+		"assets/gallery-images/glow/glow_guide_back.jpg",
+		"assets/gallery-images/glow/glow_set.png"
 	]
 }

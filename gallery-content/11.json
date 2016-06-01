@@ -1,10 +1,10 @@
 {
-	"title": "Red and Black",
-	"description": "Newspaper publication for an independent student organization",
+	"title": "The Red and Black",
+	"description": "<a href=\"http://www.redandblack.com\" target=\"_blank\">The Red and Black Publishing Company, Inc.</a> is an independent, student-organized newspaper publication. It was founded in 1893, and has operated for 87 years under the University of Georgia. Each week, 10,000 copies of the print edition are distributed both on and off campus, reaching nearly 45,000 students, faculty and staff. Designed spreads and illustrations that cover news, sports, arts, music, culture as well as opinion pieces from June 2015 to December 2015 editions.",
 	"images": [
-		"assets/gallery-images/redblack/redandblack_04.png",
+		"assets/gallery-images/redblack/redandblack_00.jpg",
 		"assets/gallery-images/redblack/redandblack_02.png",
 		"assets/gallery-images/redblack/redandblack_03.png",
-		"assets/gallery-images/redblack/redandblack_05.png"
+		"assets/gallery-images/redblack/redandblack_05.jpg"
 	]
 }
