@@ -1,7 +1,14 @@
 {
-	"title": "",
-	"description": "",
+	"title": "Axon Tutors",
+	"description": "Axon Tutors is a marketplace for tutors and students founded in 2014, based in Athens, GA. Designed early concepts of logo and brand identity, early website design, and contributed photographs for social media, digital and print use.",
 	"images": [
-		""
+		"assets/gallery-images/axon_tutors/axon_tutors_digital.jpg",
+		"assets/gallery-images/axon_tutors/axon_logos.jpg",
+		"assets/gallery-images/axon_tutors/axon_photo_01.jpg",
+		"assets/gallery-images/axon_tutors/axon_photo_02.jpg",
+		"assets/gallery-images/axon_tutors/axon_photo_03.jpg",
+		"assets/gallery-images/axon_tutors/axon_photo_04.jpg",
+		"assets/gallery-images/axon_tutors/axon_photo_05.jpg",
+		"assets/gallery-images/axon_tutors/axon_photo_06.jpg"
 	]
 }

@@ -1,10 +1,12 @@
 {
-	"title": "Paul Rand Exhibition",
-	"description": "Paul Rand is a celebrated graphic designer and one of the forerunners that brought the importance of design into the corporate world. Some of his popular designs include Apple's NEXT computer logo, IBM, UPS, and ABC logo. His poster designs are geometric, colorful, bright, but also simplistic and whimsical. <br><br>Process<br> This museum exhibition project is designed to highlight the reels of Paul Rand's life work and give the audience a brief understanding of Rand as well as attract attention from a distance. Consideration was taken to acknowledge the elements, constraints and practicality of a 3D environmental space. Challenges also included selecting which pieces would work best for the exhibit after research, sketching, conceptualizing and developing a 3D paper model of the exhibit.",
+	"title": "Sense",
+	"description": "Collaborative project using a variety of different screen printing techniques creating an experience of a lucid dream. <br><br>Process<br> To create a vivid and visual space that would engulf the viewer in various senses from sight to hearing, creating a dream-like realm that is also naturalistic. A video is projected to the wall of a river flowing so the sound of water reminds the viewer of nature, as does the different textures screen printed and pasted onto the walls. The juxtaposition of bright, unnatural colors of the clouds and diamond patterns with the subdued bark textures give a sense of familiarity but also uneasiness.",
 	"images": [
-		"assets/gallery-images/paul_rand_exhibit/pr_environmental.png",
-		"assets/gallery-images/paul_rand_exhibit/pr_illustrative.png",
-		"assets/gallery-images/paul_rand_exhibit/pr_photo.png",
-		"assets/gallery-images/paul_rand_exhibit/pr_3Dmodels.jpg"
+		"assets/gallery-images/sense/sense_01.jpg",
+		"assets/gallery-images/sense/sense_02.jpg",
+		"assets/gallery-images/sense/sense_03.jpg",
+		"assets/gallery-images/sense/sense_04.jpg",
+		"assets/gallery-images/sense/sense_05.jpg",
+		"assets/gallery-images/sense/sense_06.jpg"
 	]
 }
