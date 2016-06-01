@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<section id="gallery-description">
-			<a href="index.html" style="text-decoration: none">&#10229;  all projects</a>
+			<a href="index.html" style="text-decoration: none">all projects</a>
 			<h1 id="project-title"></h1>
 			<p id="project-info"></p>
 			<span id="hide-project-info">hide project info &ndash;</span>
@@ -17,12 +17,22 @@
 		<section id="gallery">
 			<!-- IMAGES GO HERE -->
 		</section>
-		<div id="footer">
-			<a id="previous-project-footer" href="#">&#10229; previous project</a>
-			<a id="next-project-footer" href="#">next project &#10230;</a>
+		<div class="navigation">
+			<a class="previous-project-navigation" href="#">
+			<i class="fa fa-angle-left" aria-hidden="true"></i> previous project
+			</a>
+			<a class="next-project-navigation" href="#">next project
+				<i class="fa fa-angle-right" aria-hidden="true"></i>
+			</a>
 		</div>
 <script type='text/javascript' src='bower_components/jquery/dist/jquery.min.js'></script>
 <script type="text/javascript">
+
+	$(function(){
+		$("html").fadeIn(700);
+	})
+
+
 	$("#show-project-info, #hide-project-info").click(function() {
 		$("#hide-project-info, #show-project-info").toggle()
 		$("#project-info").slideToggle()
@@ -63,15 +73,15 @@
 	var total_number_of_projects = 16;
 
 	if (currentProjectId + 1 <= total_number_of_projects) {
-		$("#next-project-footer").attr("href", "gallery.html?id=" + (currentProjectId + 1));
+		$(".next-project-navigation").attr("href", "gallery.html?id=" + (currentProjectId + 1));
 	} else {
-		$("#next-project-footer").hide();
+		$(".next-project-navigation").hide();
 	}
 
 	if (currentProjectId - 1 > 0) {
-		$("#previous-project-footer").attr("href", "gallery.html?id=" + (currentProjectId - 1));
+		$(".previous-project-navigation").attr("href", "gallery.html?id=" + (currentProjectId - 1));
 	} else {
-		$("#previous-project-footer").hide();
+		$(".previous-project-navigation").hide();
 	}
 </script>
 
