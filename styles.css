@@ -182,11 +182,11 @@ body {
 
 .portfolio-year.doodle {
 	/*background-color: #161F2E;*/
-	background-color: #FAFFF4;
+	background-color: white;
 }
 
 .portfolio-year.explorative {
-	background-color: #F7FAFF;
+	background-color: white;
 }
 
 .portfolio-year.expedition {
@@ -275,10 +275,10 @@ body {
 
 .timeline-year .circle {
 	display: none;
-	min-height: 15px;
-	min-width: 15px;
-	background-color: #5677FC;
-	border: 3px solid white;
+	min-height: 5px;
+	min-width: 5px;
+	background-color: black;
+	border: 5px solid black;
 	border-radius: 100%;
 	margin-bottom: -20px;
 }
