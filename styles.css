@@ -26,7 +26,7 @@ body {
 }
 
 #my-intro {
-	/*max-width*/: 650px;
+/*	max-width: 650px;*/
 	float: left;
 	letter-spacing: .2px;
 }
