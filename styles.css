@@ -95,6 +95,9 @@ body {
   		background: white;
   		text-align: center;
   	}
+  	#my-intro h1 {
+  		letter-spacing: -1px;
+  	}
 
 
   	#my-intro {
