@@ -11,9 +11,11 @@
 			<a id="all-projects-button" href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i> all projects</a>
 			<div class="navigation">
 				<a class="previous-project-navigation" href="#">
-				<i class="fa fa-angle-left" aria-hidden="true"></i></a>
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+				</a>
 				<a class="next-project-navigation" href="#">
-					<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</a>
 			</div>
 			<h1 id="project-title"></h1>
 			<p id="project-info"></p>
@@ -25,70 +27,78 @@
 		</section>
 		<div class="navigation">
 			<a class="previous-project-navigation" href="#">
-			<i class="fa fa-angle-left" aria-hidden="true"></i> previous project
+				<i class="fa fa-angle-left" aria-hidden="true"></i> previous project
 			</a>
 			<a class="next-project-navigation" href="#">next project
 				<i class="fa fa-angle-right" aria-hidden="true"></i>
 			</a>
 		</div>
-<script type='text/javascript' src='bower_components/jquery/dist/jquery.min.js'></script>
-<script type="text/javascript">
+		<script type='text/javascript' src='bower_components/jquery/dist/jquery.min.js'></script>
+		<script type="text/javascript">
 
-	$(function(){
-		$("html").fadeIn(700);
-	})
+			$(function(){
+				$("html").fadeIn(700);
+			})
 
 
-	$("#show-project-info, #hide-project-info").click(function() {
-		$("#hide-project-info, #show-project-info").toggle()
-		$("#project-info").slideToggle()
-	})
+			$("#show-project-info, #hide-project-info").click(function() {
+				$("#hide-project-info, #show-project-info").toggle()
+				$("#project-info").slideToggle()
+			})
 
-	var getUrlParameter = function getUrlParameter(sParam) {
-	    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-	        sURLVariables = sPageURL.split('&'),
-	        sParameterName,
-	        i;
+			var getUrlParameter = function getUrlParameter(sParam) {
+			    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			        sURLVariables = sPageURL.split('&'),
+			        sParameterName,
+			        i;
 
-	    for (i = 0; i < sURLVariables.length; i++) {
-	        sParameterName = sURLVariables[i].split('=');
+			    for (i = 0; i < sURLVariables.length; i++) {
+			        sParameterName = sURLVariables[i].split('=');
 
-	        if (sParameterName[0] === sParam) {
-	            return sParameterName[1] === undefined ? true : sParameterName[1];
-	        }
-	    }
-	};
+			        if (sParameterName[0] === sParam) {
+			            return sParameterName[1] === undefined ? true : sParameterName[1];
+			        }
+			    }
+			};
 
-	function pad(n, width, z) {
-	  z = z || '0';
-	  n = n + '';
-	  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
-	}
+			function pad(n, width, z) {
+			  z = z || '0';
+			  n = n + '';
+			  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+			}
 
-	var currentProjectId = parseInt(getUrlParameter("id"));
-	$.getJSON("gallery-content/" + pad(currentProjectId, 2) + ".json", function(data) {
-		$("#project-title").html(data["title"]);
-		$("#project-info").html(data["description"]);
-		data["images"].forEach(function(image_url){
-			var img = $('<img class="gallery-image">');
-			img.attr('src', image_url);
-			img.appendTo('#gallery');
-		});
-	});
+			var currentProjectId = parseInt(getUrlParameter("id"));
+			$.getJSON("gallery-content/" + pad(currentProjectId, 2) + ".json", function(data) {
+				$("#project-title").html(data["title"]);
+				$("#project-info").html(data["description"]);
+				data["images"].forEach(function(image_url){
+					var img = $('<img class="gallery-image">');
+					img.attr('src', image_url);
+					img.appendTo('#gallery');
+				});
+			});
 
-	var total_number_of_projects = 16;
+			var total_number_of_projects = 16;
 
-	if (currentProjectId + 1 <= total_number_of_projects) {
-		$(".next-project-navigation").attr("href", "gallery.html?id=" + (currentProjectId + 1));
-	} else {
-		$(".next-project-navigation").hide();
-	}
+			if (currentProjectId + 1 <= total_number_of_projects) {
+				$(".next-project-navigation").attr("href", "gallery.html?id=" + (currentProjectId + 1));
+			} else {
+				$(".next-project-navigation").hide();
+			}
 
-	if (currentProjectId - 1 >= 0) {
-		$(".previous-project-navigation").attr("href", "gallery.html?id=" + (currentProjectId - 1));
-	} else {
-		$(".previous-project-navigation").hide();
-	}
-</script>
-
-	</html>
+			if (currentProjectId - 1 >= 0) {
+				$(".previous-project-navigation").attr("href", "gallery.html?id=" + (currentProjectId - 1));
+			} else {
+				$(".previous-project-navigation").hide();
+			}
+		</script>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-70829625-1', 'auto');
+		ga('send', 'pageview');
+		</script>
+	</body>
+</html>
