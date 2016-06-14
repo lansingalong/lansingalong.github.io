@@ -11,8 +11,8 @@ html {
 }
 
 body {
-	font-family: "Akkurat";
-	font-weight: "light";
+	font-family: "Lato";
+	font-weight: "300";
 }
 
 #top-bar {
@@ -32,12 +32,13 @@ body {
 }
 
 #my-intro p {
-	font-family: "Akkurat";
+	font-family: "Lato";
 	line-height: 150%;
 	font-size: 17px;
 }
 
 #my-intro h1 {
+	font-family: "Akkurat";
 	font-size: 48px;
 	font-weight: bold;
 	margin-bottom: 0;
