@@ -1,0 +1,28 @@
+name: Lansing's Blog
+description: Thoughts on stuff
+meta_description: "Thoughts on stuff"
+
+markdown: kramdown
+highlighter: pygments
+logo: false
+paginate: 15
+baseurl: /blog/
+domain_name: 'http://lansingcai.me'
+google_analytics: 'UA-XXXXXXXX-X'
+gems: [jekyll-paginate]
+
+# Details for the RSS feed generator
+url: 'http://lansingcai.me'
+author:
+  name: 'Lansing Cai'
+  description: 'Designer from outer space'
+  
+source:       ./blog_src
+destination:  ./blog
+plugins_dir:  ./blog_src/_plugins
+layouts_dir:  ./blog_src/_layouts
+data_dir:     ./blog_src/_data
+includes_dir: ./blog_src/_includes
+posts_dir:    ./blog_src/_posts
+sass_dir: ./blog_src/_sass
+collections:  null
