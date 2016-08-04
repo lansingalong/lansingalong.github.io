@@ -38,6 +38,7 @@ $(function() {
 
 		adjustForExtraProjects();
 		$(window).resize(adjustForExtraProjects);
+		adjustForExtraProjects();
 
 		// make the timeline-nav equally distributed in width
 		var adjustForNavBar = function(){
