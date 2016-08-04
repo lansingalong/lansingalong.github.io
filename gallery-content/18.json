@@ -1,9 +1,11 @@
 {
 	"title": "Artificial and Natural Flavors",
-	"description": "This senior thesis project was created with the prompt, making the invisible, visible. Artificial and natural flavors are virtually the same, and this video was made to explain the terms associated with flavoring and nutrition, talk about the problem, and a proposed solution. Challenges included storyboarding, animation and writing scripts, doing voice-overs.",
+	"description": "\"Making the invisible, visible\" was the prompt for my senior thesis project. I think it's interesting that tasting and eating is something that everybody does, multiple times a day, but we don't think twice about flavors or why we taste certain foods. <br> For nutrition enthusiasts, we might look at a nutrition label when we go shopping, but critically looking at information food labels are providing to consumers sparked my interest. The result is an informative animation video made for educational purposes. I wanted to focus on explaining certain terms that might cause confusion, talk about the problem, why it is a problem, and a proposed solution. <br> The video was done in After Effects and is a fun way for families, including children to watch and understand the difference between artificial and natural flavors, and perhaps think more closely about nutrition labels next time they are at the grocery store.",
+
 	"images": [
 		"assets/gallery-images/a_and_n/nutrition_label.jpg",
-		"assets/gallery-images/a_and_n/nutrition_label_color.jpg"
+		"assets/gallery-images/a_and_n/nutrition_label_color.jpg",
+		"assets/gallery-images/a_and_n/process.jpg"
 	],
 	"custom_html": [
 		"<iframe src=\"https://player.vimeo.com/video/176698503\" width=\"960\" height=\"720\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
