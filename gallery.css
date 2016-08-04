@@ -111,9 +111,14 @@ body {
    		margin: auto;
    	}
 
-   	.gallery-image {
+   	.gallery-image, .gallery-custom_html {
    		margin-top: 10px !important;
    	}
+   	iframe.gallery-custom_html {
+   		width: 100%;
+   		height: 200px;
+   	}
+
 
    	.previous-project-navigation, .next-project-navigation {
    		width: 160px;
@@ -144,7 +149,7 @@ body {
 	text-decoration: none;
 }
 
-.gallery-image {
+.gallery-image, .gallery-custom_html {
 	margin-top: 20px;
 	max-width: 100%;
 }

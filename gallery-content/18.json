@@ -4,5 +4,8 @@
 	"images": [
 		"assets/gallery-images/a_and_n/nutrition_label.jpg",
 		"assets/gallery-images/a_and_n/nutrition_label_color.jpg"
+	],
+	"custom_html": [
+		"<iframe src=\"https://player.vimeo.com/video/176698503\" width=\"960\" height=\"720\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 	]
 }

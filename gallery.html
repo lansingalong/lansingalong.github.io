@@ -72,6 +72,11 @@
 			$.getJSON("gallery-content/" + pad(currentProjectId, 2) + ".json", function(data) {
 				$("#project-title").html(data["title"]);
 				$("#project-info").html(data["description"]);
+				data["custom_html"].forEach(function(html_source){
+					var html_code = $(html_source);
+					html_code.attr('class', "gallery-custom_html");
+					html_code.appendTo('#gallery');
+				})
 				data["images"].forEach(function(image_url){
 					var img = $('<img class="gallery-image">');
 					img.attr('src', image_url);
@@ -79,7 +84,7 @@
 				});
 			});
 
-			var total_number_of_projects = 17;
+			var total_number_of_projects = 18;
 
 			if (currentProjectId + 1 <= total_number_of_projects) {
 				$(".next-project-navigation").attr("href", "gallery.html?id=" + (currentProjectId + 1));
